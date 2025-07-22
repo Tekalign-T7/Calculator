@@ -1,0 +1,106 @@
+
+#container{
+    background-color:rgb(95, 245, 100);
+    border-radius:10px;
+    display:flex;
+    flex-wrap:wrap;
+    margin-top:10px;
+    margin-bottom:10px;
+    width:300px;
+}
+.button{
+    font-weight:700;
+    margin:0px;
+    text-align:center;
+    border:0px solid white;
+    height:75px;
+    width:75px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:10px;
+}
+.button:hover{
+    background-color:rgb(225, 219, 219);
+    transition:0.4s ease;
+}
+#calculator-padding{
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
+    border:2px solid grey;
+    align-items:center;
+    width:320px;
+    height:507px;
+    border-radius:10px;
+    background-color: rgb(98, 195, 231);
+}
+#screen{
+    overflow:hidden;
+    display:flex;
+    align-items:flex-end;
+    justify-content:flex-end;
+    font-size:27px;
+    font-weight:bold;
+    height:60px;
+    width:297px;
+    margin-top:20px;
+    margin-bottom:20px;
+    border:2px solid grey;
+    background-color:white;
+    border-radius:5px;
+    border:4.5px solid white;
+}
+#calculator{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    width:100%;
+    height:100%;
+    margin-top:10px;
+    margin-bottom:10px;
+}
+#header{
+    text-align:center;
+    margin-top:2px;
+    margin-bottom:2px;
+}
+.right-end-button{
+    background-color:rgb(236, 236, 7);
+    border-radius:10px;
+    font-weight:700;
+    margin:0px;
+    text-align:center;
+    border:0px solid white;
+    height:75px;
+    width:75px;
+    font-size:20px;
+    cursor:pointer;
+    border-radius:10px;
+}
+.right-end-button:hover{
+    background-color:rgb(3, 7, 1);
+}
+.AC-button{
+   background-color:black;
+   color:white;
+   border-radius:10px;
+   transition:0.4s ease;  
+   font-weight:700;
+   margin:0px;
+   text-align:center;
+   border:0px solid white;
+   height:75px;
+   width:75px;
+   font-size:20px;
+   cursor:pointer;
+   border-radius:10px;
+}
+.AC-button:hover{
+    background-color:rgb(104, 92, 92);
+    transition:0.4s ease;
+}
+footer{
+    margin-top:2px;
+    text-align:center;
+}
+
