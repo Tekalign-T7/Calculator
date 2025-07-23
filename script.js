@@ -66,16 +66,13 @@ division.addEventListener("click",()=>{
     display.append("/");
 })
 percent.addEventListener("click",()=>{
-    display.append("%");
-    display.append("=");
     const fromscreen=display.textContent;
     const result=fromscreen.charAt(0);
     const changing_result_to_string=result.toString();
-    display.append(changing_result_to_string/100);
+    display.textContent=changing_result_to_string/100;
 })
 reset.addEventListener("click",()=>{
     display.textContent="";
-    //location.reload();
 })
 dot.addEventListener("click",()=>{
     display.append(".");
