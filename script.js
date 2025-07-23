@@ -1,5 +1,4 @@
 const reset=document.querySelector("#buttonAC");
-const comma =document.querySelector("#comma");
 const percent =document.querySelector("#percent");
 const division =document.querySelector("#division");
 const seven =document.querySelector("#seven");
@@ -19,8 +18,11 @@ const dot =document.querySelector("#dot");
 const back =document.querySelector("#back");
 const equal =document.querySelector("#equal");
 const display=document.querySelector("#screen");
-//let array=[];
+const dot1=document.querySelector("#dot1");
 
+dot1.addEventListener("click",()=>{
+    display.append(".");
+})
 one.addEventListener("click",(event)=>{
     display.append("1");
 })
@@ -65,6 +67,11 @@ division.addEventListener("click",()=>{
 })
 percent.addEventListener("click",()=>{
     display.append("%");
+    display.append("=");
+    const fromscreen=display.textContent;
+    const result=fromscreen.charAt(0);
+    const changing_result_to_string=result.toString();
+    display.append(changing_result_to_string/100);
 })
 reset.addEventListener("click",()=>{
     display.textContent="";
@@ -74,10 +81,7 @@ dot.addEventListener("click",()=>{
     display.append(".");
 })
 back.addEventListener("click",()=>{
-    const the_lastElement=display.textContent.length-1;
-    let the_new_string= display.slice(0,the_lastElement)
-    display.textContent(the_new_string);
-    console.log(the_new_string);
+    display.textContent=display.textContent.slice(0,-1);
 })
 equal.addEventListener("click",()=>{
     try {
